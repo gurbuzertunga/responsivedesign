@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.gray {
+  color: #9d9999;
+}
+
+.nav1 {
+  background-color: #131313;
+  color: #9f9f9f;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.nav1 ul, .nav2 ul{
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+
+.nav1 ul li, .nav2 ul li {
+  padding: 10px;
+}
+
+.nav2 {
+  background-color: #fff;
+  color: #aaa;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.nav2 .nav-search {
+  padding-top: 20px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.nav-search:hover {
+  border: solid 1px darkgray;
+}
+
+
+
+section {
+  display: grid;
+  grid-template-columns: 65% 30%;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "section1 section2"
+  "section1 section2";
+}
+
+
+.section1 {
+  grid-area: section1;
+  height: 380px; 
+  background:
+    linear-gradient(
+      180deg,
+      rgba(148, 67, 20, 0.6) 30%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('img/bitcoin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section1 img {
+  max-width: 350px;
+  padding: 25px;
+}
+
+.section1 div {
+  padding: 25px;
+}
+
+.showcase-header{
+
+}
+
+.showcase-title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.section1 ul {
+  display: flex;
+  list-style: none;
+}
+
+.section1 ul li {
+  margin: 0 10px;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+
+.section2-img1 {
+  background-image: url('img/flag.jpg');
+  background-size: cover;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.section2-img2 {
+  background-image: url('img/flag.jpg');
+  background-size: cover;
+  height: 180px;
+}
