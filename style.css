@@ -434,16 +434,37 @@ section {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
    }
-
-
 }
 
 
 @media only screen and (max-width: 767px) {
   .mobile-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 15px;
+  }
+
+  .mobile-nav-search {
+    border-left: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    padding: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .mobile-nav .fa-search:hover {
+    color: black;
+  }
+  .mobile-nav-more {
+    padding: 15px;
+  }
+
+  .mobile-nav1 {
+    display: flex;
+  }
+
+  .mobile-nav2 img {
+    width: 66px;
+    margin-top: 20px;
   }
 
   .nav1,
