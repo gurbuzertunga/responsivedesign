@@ -18,6 +18,13 @@
     font-size: 12px;
   }
 
+  .nav1 ul,
+  .nav2 ul {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+  }
+
   .mobile-nav2 {
     display: none;
     background: rgb(210, 18, 137);
@@ -61,6 +68,18 @@
     width: 90%;
   }
 
+  .ul3 p {
+    padding-top: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+  }
+
+  .ul4 li p {
+    padding-top: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 18px;
+  }
+
   .more-list {
     margin: 25px 50px;
     display: grid;
@@ -70,6 +89,16 @@
 
   .more-list .header-img {
     width: 100%;
+  }
+
+  .hardfork-img .hardfork-content {
+    position: absolute;
+    top: 205px;
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    padding-left: 10px;
+    color: white;
   }
 
   .footer2 {
@@ -82,7 +111,7 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .tnw-main-article-image {
+  #tnw-main-article-image {
     display: none;
   }
 
@@ -95,7 +124,7 @@
   .medium-nav {
     display: grid;
     grid-template-columns: 101px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
     grid-template-areas:
       "mobile-nav2 nav1"
       "mobile-nav2 nav2";
@@ -126,6 +155,7 @@
     justify-content: space-between;
     font-weight: 500;
     font-size: 15px;
+    height: 100%;
   }
 
   .nav1 {
@@ -135,6 +165,13 @@
     display: flex;
     justify-content: space-between;
     font-size: 12px;
+    height: 100%;
+  }
+
+  .nav1 ul,
+  .nav2 ul {
+    list-style: none;
+    display: flex;
   }
 
   .section1 {
@@ -161,6 +198,20 @@
 
   .article2-subelement {
     margin-left: 25px;
+  }
+
+  .ul3 p {
+    padding-top: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 13px;
+    font-weight: 200;
+  }
+
+  .ul4 li p {
+    padding-top: 8px;
+    color: rgb(34, 34, 34);
+    font-size: 13px;
+    font-weight: 200;
   }
 
   .more-list {
@@ -215,7 +266,6 @@
 
   .mobile-nav {
     display: flex;
-    position: fixed;
     width: 100%;
     justify-content: space-between;
     background-color: #fff;
@@ -256,6 +306,7 @@
   }
 
   section {
+    margin-top: 10px;
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr;
@@ -334,7 +385,7 @@
   }
 
   .more-list .header-img {
-    width: 647px;
+    width: 100%;
   }
 
   .hardfork-img {
