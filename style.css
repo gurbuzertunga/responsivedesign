@@ -8,6 +8,10 @@ body {
   font-family: 'Maven Pro', sans-serif;
 }
 
+.overline {
+  text-decoration: line-through;
+}
+
 a {
   color: gray;
   text-decoration: none;
@@ -32,6 +36,7 @@ a {
 .thin {
   font-family: 'Heebo', sans-serif;
   font-size: 14px;
+
   /* padding: 5px; */
 }
 
@@ -49,16 +54,12 @@ ul {
   list-style: none;
 }
 
-
-
 .nav1 ul,
 .nav2 ul {
   list-style: none;
   display: flex;
   padding: 10px;
 }
-
-
 
 .nav2 .nav-search {
   padding-top: 20px;
@@ -160,8 +161,8 @@ section {
 }
 
 .news-container img {
-  max-height: 135px;
-  width: 270px;
+  max-height: 100%;
+  width: 100%;
 }
 
 /* **********************************article2*********************** */
@@ -220,7 +221,7 @@ section {
   font-weight: 700;
 }
 
-.ul2 li{
+.ul2 li {
   padding-left: 8px;
 }
 
@@ -256,7 +257,7 @@ section {
   padding-left: 45px;
 }
 
-.company-logo{
+.company-logo {
   position: relative;
 }
 
@@ -288,18 +289,11 @@ section {
   padding: 5px 10px;
 }
 
-.hardfork-img{
+.hardfork-img {
   position: relative;
-
 }
 
-.hardfork-img div{
-  background:
-    linear-gradient(
-      180deg,
-      rgba(148, 67, 20, 0.6) 30%,
-      rgba(0, 0, 0, 1) 100%
-    );
+.hardfork-img .hardfork-content {
   position: absolute;
   top: 205px;
   display: flex;
@@ -309,7 +303,7 @@ section {
   color: white;
 }
 
-.hard-fork-grey{
+.hard-fork-grey {
   color: #333;
 }
 
@@ -352,7 +346,7 @@ section {
   color: #fff;
   border-radius: 50%;
   font-size: 22px;
-  margin: 0 15px;
+  margin: 0 5px;
   padding: 10px;
 }
 
@@ -360,19 +354,11 @@ section {
   display: flex;
   list-style: none;
   color: #9d9999;
-  margin: 10px;
+  margin-top: 25px;
 }
 
 .footer1 ul li {
-  margin: 0 10px;
-}
-
-.footer2 {
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  color: #9d9999;
-  padding: 50px;
+  margin: 0 5px;
 }
 
 .footer2 img {
