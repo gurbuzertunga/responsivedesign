@@ -80,6 +80,21 @@
     font-size: 18px;
   }
 
+  .one {
+    padding-right: 13px;
+    border-right: 1.5px solid rgb(241, 106, 57);
+  }
+  
+  .two {
+    padding-right: 10px;
+    border-right: 1.5px solid rgb(241, 106, 57);
+    padding-left: 13px;
+  }
+  
+  .three {
+    padding-left: 13px;
+  }
+
   .more-list {
     margin: 25px 50px;
     display: grid;
@@ -93,7 +108,7 @@
 
   .hardfork-img .hardfork-content {
     position: absolute;
-    top: 205px;
+    bottom: 8%;
     display: flex;
     flex-direction: column;
     font-size: small;
@@ -110,7 +125,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
   #tnw-main-article-image {
     display: none;
   }
@@ -214,6 +229,21 @@
     font-weight: 200;
   }
 
+  .one {
+    padding-right: 13px;
+    border-right: 1.5px solid rgb(241, 106, 57);
+  }
+  
+  .two {
+    padding-right: 10px;
+    border-right: 1.5px solid rgb(241, 106, 57);
+    padding-left: 13px;
+  }
+  
+  .three {
+    padding-left: 13px;
+  }
+
   .more-list {
     margin: 25px 50px;
     display: grid;
@@ -232,7 +262,7 @@
 
   .hardfork-img .hardfork-content {
     position: absolute;
-    top: 125px;
+    bottom: 8%;
     display: flex;
     flex-direction: column;
     font-size: small;
@@ -241,7 +271,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .nav1,
   .nav2,
   .mobile-nav2 {
@@ -267,6 +297,9 @@
   .mobile-nav {
     display: flex;
     width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     justify-content: space-between;
     background-color: #fff;
   }
@@ -310,7 +343,6 @@
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
     grid-gap: 10px;
     grid-template-areas:
       "section1"
@@ -361,7 +393,7 @@
   .article2 {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 25px;
   }
 
   .article2-subelement {
@@ -379,8 +411,8 @@
 
   .more-list {
     margin: 25px 50px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
@@ -394,7 +426,7 @@
 
   .hardfork-img .hardfork-content {
     position: absolute;
-    top: 395px;
+    bottom: 8%;
     display: flex;
     flex-direction: column;
     font-size: small;

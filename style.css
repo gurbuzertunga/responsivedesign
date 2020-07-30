@@ -19,7 +19,6 @@ a {
 
 .flex {
   display: flex;
-  justify-content: space-between;
 }
 
 .white {
@@ -69,10 +68,6 @@ ul {
   border: solid 1px darkgray;
 }
 
-main {
-  margin: 5px;
-}
-
 .news-header {
   margin: 20px;
 }
@@ -99,13 +94,12 @@ section {
     url('img/bitcoin.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .section1 img {
-  max-height: 100px;
+  max-width: 75vh;
   align-self: flex-start;
   padding: 25px;
 }
@@ -118,7 +112,6 @@ section {
 .section1 ul,
 .section2 ul,
 .section3 ul {
-  display: flex;
   list-style: none;
 }
 
@@ -140,7 +133,6 @@ section {
     ),
     url('img/bitcoin.jpg');
   background-size: cover;
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   max-height: 100%;
@@ -171,28 +163,12 @@ section {
 }
 
 .article2-subelement {
-  display: flex;
   margin-right: 50px;
   color: rgb(241, 106, 57);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 16px;
   font-weight: 700;
   padding-top: 20px;
-}
-
-.one {
-  padding-right: 13px;
-  border-right: 1.5px solid rgb(241, 106, 57);
-}
-
-.two {
-  padding-right: 10px;
-  border-right: 1.5px solid rgb(241, 106, 57);
-  padding-left: 13px;
-}
-
-.three {
-  padding-left: 13px;
 }
 
 /* *****************************under article 2 ******************************* */
@@ -270,7 +246,6 @@ section {
 
 .more-info-header {
   background-color: #fff4f2;
-  display: flex;
 }
 
 .more-info-header img {
@@ -308,11 +283,14 @@ section {
   margin-left: -1em;
 }
 
+.news-pages-titles {
+  justify-content: space-between;
+}
+
 .footer1 {
   padding: 50px;
   margin: 0 auto;
   background-color: #131313;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -327,7 +305,6 @@ section {
 }
 
 .footer1 ul {
-  display: flex;
   list-style: none;
   color: #9d9999;
   margin-top: 25px;
