@@ -40,8 +40,6 @@ a {
 .thin {
   font-family: 'Heebo', sans-serif;
   font-size: 14px;
-
-  /* padding: 5px; */
 }
 
 .orange-headers {
@@ -74,9 +72,9 @@ ul {
 
 section {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 68% 30%;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  gap: 2%;
   grid-template-areas:
     "section1 section2"
     "section1 section3";
